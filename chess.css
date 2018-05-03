@@ -1,0 +1,62 @@
+﻿body {
+    background-color: rgb(173,167,164); /* limestone */
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.Panel {
+    display: inline-block;
+    position: relative; /* objects in panel will be positioned relative to the panel */
+    overflow: hidden; /* prevent contents from messing up alignment */
+}
+
+#Board {
+    width: 512px;
+    height: 512px;
+}
+
+#Sidebar {
+    width: 256px;
+    height: 512px;
+    background-color: rgb(237,235,235);
+    text-align:center;
+}
+
+#MovePanel {
+    width: 512px;
+    height: 256px;
+    background-color: rgb(237,235,235);
+}
+
+#MoveList {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#ButtonContainer {
+    width: 512px;
+}
+
+#GameInfo {
+    background-color: rgb(237,235,235);
+    width: 512px;
+    text-align: center;
+}
+
+.MyButton {
+    display: inline-block;
+    width: 49%;
+}
+
+.Square {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Piece {
+    height: 48px;
+    width: 48px;
+}

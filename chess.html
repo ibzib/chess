@@ -1,0 +1,30 @@
+﻿<!doctype html>
+<head>
+    <title>Chess</title>
+    <link href="Global.css" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/x-icon" href="Images/white-king.png" />
+</head>
+<body>
+    <!-- info about current game state -->
+    <div id="GameInfo" class="Panel"></div>
+    <br />
+    <!-- The container for the chessboard itself -->
+    <div id="Board" class="Panel"></div>
+    <br />
+    <div id="MovePanel" class="Panel">
+        <!-- Undo/redo buttons -->
+        <button class="MyButton" id="UndoButton" onclick="undoMove()">Undo</button>
+        <button class="MyButton" id="RedoButton" onclick="redoMove()">Redo</button>
+        <br />
+        <br />
+        <!-- interactive record of moves played so far -->
+        <div id="MoveList"></div>
+    </div>
+    <br />
+    <!-- Project and contact information -->
+    <p id="Copyright">
+        A290 WEB Final Project, Spring 2018. Kyle Weaver
+        <a id="Email" href="mailto:kyleweav@iu.edu">kyleweav@iu.edu</a>
+    </p>
+    <script src="chess.js"></script>
+</body>
